@@ -1,0 +1,9 @@
+html, body, video {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+video {
+  object-fit: fill;
+}
