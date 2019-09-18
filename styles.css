@@ -30,44 +30,7 @@ audio {
   left: 20%;
 }
 
-#add-emoji {
-  position: absolute;
-  bottom: 10px;
-  left: 80%;
-}
-
-/* .filter {
-  display: none;
-} */
-
 .filter {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 30px;
-  display: none;
-  opacity: .3;
-  animation: 3s linear 0s infinite alternate purple_background; */
 }
-
-/*
-@keyframes purple_background {
-  0% {
-    background: #e6e6fa;
-  }
-  25% {
-    background: #ee82ee;
-  }
-  50% {
-    background: #9370db;
-  }
-  75% {
-    background: #8b008b;
-  }
-  100% {
-    background: #4b0082;
-  }
-} */

@@ -15,6 +15,7 @@
   "dependencies": {
     "electron-screencapture": "^1.1.0",
     "electron-screenshot": "^1.0.5",
+    "html2canvas": "^1.0.0-rc.3",
     "jquery": "^3.4.1",
     "node-emoji": "^1.10.0"
   }

@@ -1,8 +1,6 @@
 const fs     = require('fs');
 const app    = require('electron').app    || require('electron').remote.app;
 const screen = require('electron').screen || require('electron').remote.screen;
-const emoji  = require('node-emoji');
-const screenshot = require('electron-screenshot');
 
 // wait for page to be ready
 $(() => {
@@ -40,7 +38,6 @@ function attachEventListeners() {
   $('#snap').on('click', snapPhoto);
   $('#multi-snap').on('click', {i: 0}, snapMultiPhotos);
   $('#filter').on('change', toggleFilter);
-  $('#add-emoji').on('click', addEmoji);
 }
 
 function snapPhoto() {
@@ -84,17 +81,6 @@ function toggleFilter() {
   } else {
     $('video').removeClass('filter');
   }
-}
-
-function addEmoji() {
-  const emojiSpan = document.createElement('span');
-  const newEmoji = emoji.random().emoji;
-  emojiSpan.append(newEmoji);
-
-  document.body.append(emojiSpan);
-  $(emojiSpan).css({position: 'absolute', top: '50%',
-               left: '50%', fontSize: '72px'});
-  $(emojiSpan).draggable();
 }
 
 function createDir(path) {
