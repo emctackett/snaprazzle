@@ -7,3 +7,19 @@ html, body, video {
 video {
   object-fit: fill;
 }
+
+#snap {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+#multi-snap {
+  position: absolute;
+  bottom: 10px;
+  left: 60%;
+}
+
+audio {
+  display: none;
+}
