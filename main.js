@@ -15,8 +15,6 @@ function createWindow() {
       nodeIntegration: true,
     },
     show: false,
-    transparent: true,
-    frame: false,
   });
 
   win.loadFile('index.html');
@@ -32,7 +30,7 @@ function createWindow() {
 app.on('ready', () => {
   createWindow();
 
-  win.loadURL(url.format({
+win.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
     slashes: true
