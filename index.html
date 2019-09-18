@@ -16,13 +16,16 @@
   </head>
   <body>
     <video autoplay></video>
-    <label id="filter">
-      <input type="checkbox"> Black & White Filter
-    </label>
     <canvas style="display:none;" width="800" height="600"></canvas>
-    <div class="filter"></div>
-    <button id="snap">Take picture</button>
-    <button id="multi-snap">Take 3 photos</button>
     <audio src="http://www.soundjay.com/mechanical/camera-shutter-click-08.mp3"></audio>
+    <footer>
+      <label id="filter">
+        <input type="checkbox"> Black & White Filter
+      </label>
+      <div id="snap-buttons">
+        <button id="snap">Snap photo</button>
+        <button id="multi-snap">Snap photo x3</button>
+      </div>
+    </footer>
   </body>
 </html>

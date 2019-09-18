@@ -2,6 +2,8 @@ html, body, video {
   height: 100%;
   width: 100%;
   background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 video {
@@ -12,22 +14,26 @@ audio {
   display: none;
 }
 
-#snap {
+footer {
+  color: #fafbfc;
+  background-color: #262829;
+  padding: 15px 10px;
   position: absolute;
-  bottom: 10px;
-  left: 40%;
+  bottom: 0;
+  display: block;
+  width: 100%;
 }
 
-#multi-snap {
-  position: absolute;
-  bottom: 10px;
-  left: 60%;
+input[type='checkbox'] {
+  bottom: 1px;
+  vertical-align: middle;
+  position: relative;
 }
 
-#filter {
+#snap-buttons {
+  right: 30px;
   position: absolute;
-  bottom: 10px;
-  left: 20%;
+  display: inline-block;
 }
 
 .filter {
