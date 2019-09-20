@@ -92,8 +92,8 @@ function createDir(path) {
 
 function saveImg(path, image) {
   const imgData = image.replace(/^data:image\/\w+;base64,/, '');
-  const stamp   = new Date().toISOString();
-  // each photo named with unique timestamp=
+  const stamp   = new Date().toISOString().replace(/[:.\/]/g, '-');
+  // each photo named with unique timestamp
 
   fs.writeFile(`${path}/${stamp}.png`, imgData, {encoding: 'base64'}, (err) => {
     if (err) throw err;
