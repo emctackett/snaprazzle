@@ -7,6 +7,8 @@ Snaprazzle will save photos to a `Snaprazzle` directory on the user's desktop (t
 
 Also included is an optional black & white filter.
 
+![Screenshot](screenshot.png?raw=true)
+
 ### Installation
 
 - clone this respository.
